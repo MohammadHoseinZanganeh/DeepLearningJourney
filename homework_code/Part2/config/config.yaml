@@ -1,0 +1,32 @@
+data:
+  dataset: MNIST
+  validation_split: 0.1
+model:
+  momentum: 0.9 # # Momentom Rate
+  lambda_l2: 0.001  # L2 regularization
+  early_stopping_patience: 5  # Stop if no improvement for 10 epochs
+  bias_init:
+    value: 0.0
+  hidden_layers:
+  - 64
+
+  weight_init:
+    mean: 0.0
+    std: 0.1
+
+paths:
+  data_dir: data/dataset
+  results_dir: results
+  saved_models_dir: models/saved_models
+
+training:
+  momentum: 0.9 # Momentom Rate
+  lambda_l2: 0.001  # L2 regularization 
+  early_stopping_patience: 100  # Stop if no improvement for 10 epochs
+  batch_size: 8
+  epochs: 50
+  learning_rate: 0.001
+  loss_function: CE
+  normalization:  False
+  standardation: True
+  optimizer: SGD
