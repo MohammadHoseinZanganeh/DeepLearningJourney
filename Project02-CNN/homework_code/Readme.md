@@ -1,5 +1,4 @@
 
-```markdown
 # Handwritten Digit Classification with Modern CNN Architectures
 
 Implementation and comparison of three modern CNN building blocks (Residual, Inception, and ResNeXt) for classifying handwritten digits (MNIST dataset), plus a transfer learning experiment on Fashion MNIST.
