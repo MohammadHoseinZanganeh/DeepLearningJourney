@@ -1,0 +1,68 @@
+# Configuration for Block A, B, and C Architectures
+data:
+  data_dir: "./data/dataset"
+  batch_size: 256            
+  num_workers: 4             # Number of subprocesses for data loading
+  subset_size: null          # Set to a number (e.g., 500) for quick testing.
+
+
+model:
+  block_type: "A"            # "A" (Residual), "B" (Inception), "C" (ResNeXt)
+  num_classes: 10            # Number of digit classes (0-9 for MNIST)
+
+# # Block A: Residual Network
+# block_A:
+#   dropout_rate: 0.3        # Fraction of neurons dropped before the final linear layer
+#   learning_rate: 0.001     # Initial learning rate for Adam
+#   weight_decay: 0.0001     # L2 regularization strength
+#   step_size: 8             # Reduce learning rate every N epochs   
+#   gamma: 0.5               # Multiply learning rate by this factor at each step 
+
+# SGD
+block_A:
+  dropout_rate: 0.3       
+  learning_rate: 0.1       # SGD
+  weight_decay: 0.0001      
+  step_size: 8              
+  gamma: 0.5          
+
+# Block B: Inception Network 
+block_B:
+  dropout_rate: 0.4         
+  learning_rate: 0.001      
+  weight_decay: 0.0001      
+  step_size: 10           
+  gamma: 0.5                
+
+
+block_C:
+  dropout_rate: 0.4         
+  learning_rate: 0.001    
+  weight_decay: 0.0001      
+  step_size: 12             
+  gamma: 0.5                
+  groups: 4                 # Number of parallel branches(cardinality in ResNeXt)
+
+training:
+  num_epochs: 10           
+
+paths:
+  save_dir: "./models/saved_models"
+
+  
+# Transfer Learning settings
+transfer:
+  pretrained_path: "./models/saved_models/best_model_A_WithSGD.pth"
+  pretrained_block: "A"
+  dropout_rate: 0.3
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  step_size: 5
+  gamma: 0.5
+  num_epochs: 30
+
+fashion_data:
+  data_dir: "./data/fashion"
+  batch_size: 256
+  num_workers: 4
+  subset_size: null  # point to fashion MNIST folder
