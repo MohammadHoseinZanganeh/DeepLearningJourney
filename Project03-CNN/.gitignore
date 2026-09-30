@@ -5,10 +5,10 @@ __pycache__/
 venv/
 env/
 
-# Jupyter — keep notebooks, ignore checkpoints
+# Jupyter
 .ipynb_checkpoints/
 
-# Model weights
+# Model weights (files only, not folders)
 *.pt
 *.pth
 *.ckpt
@@ -18,31 +18,9 @@ env/
 *.pkl
 *.joblib
 
-# Data (large files)
-data/
-datasets/
-*.csv
-*.npy
-*.npz
-*.h5
-*.hdf5
-*.parquet
-*.zip
-*.tar
-*.tar.gz
-*.gz
-*.tgz
-*.bz2
-*.xz
-
-# Training outputs
-checkpoints/
-models/
-weights/
-runs/
-logs/
-wandb/
-outputs/
+# CSV only inside "data" folders
+**/data/**/*.csv
+**/data/*.csv
 
 # Secrets
 .env
