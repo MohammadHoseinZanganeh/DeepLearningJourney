@@ -1,0 +1,43 @@
+# Python cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Model weights
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.onnx
+*.safetensors
+*.pkl
+*.joblib
+
+# Data files (not folders)
+*.csv
+*.npy
+*.npz
+*.hdf5
+*.parquet
+*.gz
+*.tgz
+
+# Secrets
+.env
+.env.*
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Cache / logs
+.cache/
+.pytest_cache/
+*.log
