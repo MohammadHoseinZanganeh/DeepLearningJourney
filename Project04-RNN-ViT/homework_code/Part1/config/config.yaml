@@ -1,0 +1,26 @@
+# CONFIGURATION FILE FOR NER TASK
+
+# Model parameters
+model:
+  embedding_size: 64
+  hidden_size: 64
+  num_layers: 1
+  dropout: 0.0 # set to zero as it saied in instruction
+  num_labels: 9  # NER has 9 labels: O, B-PER, I-PER, B-ORG, I-ORG, B-LOC, I-LOC, B-MISC, I-MISC
+  rnn_type: 'bigru'  # Options: 'birnn', 'bilstm', 'bigru'
+
+# Training parameters
+training:
+  batch_size: 32
+  num_epochs: 10
+  learning_rate: 0.001
+  cutoff: 5
+
+# Data parameters
+data:
+  dataset_name: "conll2003"
+  data_path: "data/dataset/conll2003"
+
+# Device
+device:
+  use_cuda: true  # Will use GPU if available

@@ -1,0 +1,21 @@
+==================================================
+TEST RESULTS
+==================================================
+Test Loss: 0.7684
+Test Accuracy: 0.7295
+
+==================================================
+TRAINING HISTORY (LAST EPOCH)
+==================================================
+Final Train Loss: 0.8024
+Final Train Accuracy: 0.7153
+Final Validation Loss: 0.6740
+Final Validation Accuracy: 0.7600
+
+==================================================
+CONFIGURATION
+==================================================
+model: {'image_size': 32, 'patch_size': 4, 'in_channels': 3, 'embed_dim': 128, 'num_heads': 8, 'num_layers': 4, 'mlp_ratio': 1.0, 'num_classes': 10, 'dropout': 0.1, 'attention_dropout': 0.1}
+training: {'batch_size': 128, 'num_epochs': 30, 'learning_rate': 0.001, 'weight_decay': 0.0001, 'model_save_path': 'models/saved_models/best_model.pth'}
+data: {'dataset_name': 'cifar10', 'data_path': './data', 'num_workers': 2, 'subset_fraction': 1.0}
+device: {'use_cuda': True}

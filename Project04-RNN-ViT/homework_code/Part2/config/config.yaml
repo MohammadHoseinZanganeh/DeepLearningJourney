@@ -1,0 +1,34 @@
+# Configuration file for Vision Transformer (ViT) training on CIFAR-10
+
+# Model architecture parameters
+model:
+  image_size: 32
+  patch_size: 4
+  in_channels: 3
+  embed_dim: 128
+  num_heads: 8
+  num_layers: 4
+  mlp_ratio: 1.0
+  num_classes: 10
+  dropout: 0.1
+  attention_dropout: 0.1
+
+# Training parameters
+training:
+  batch_size: 128
+  num_epochs: 2
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  model_save_path: "models/saved_models/best_model.pth"
+
+# Data parameters
+data:
+  dataset_name: "cifar10"
+  data_path: "./data"
+  num_workers: 2
+  subset_fraction: 0.1   # set to 0.1 for quick testing, 1.0 for full dataset
+ # resize: 64 #uncomment this line to upscale the input image
+
+# Device
+device:
+  use_cuda: true
