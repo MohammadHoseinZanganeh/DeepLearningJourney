@@ -1,0 +1,47 @@
+# Configuration file for the Speech Emotion Recognition (SER) homework.
+# Every script reads its settings from this file so we do not hard-code
+# numbers inside the Python code.
+
+# Dataset settings
+dataset:
+  name: "CREMA-D"
+  kaggle_dataset_id: "ejlok1/cremad"
+  raw_data_dir: "data/dataset/raw/CREMA-D"
+  processed_data_dir: "data/dataset/processed"
+  classes: ["neutral", "happy", "angry", "sad"]
+  speaker_range: [1001, 1041]  # Only use speakers 1001 to 1021, MAX is 1091
+  val_split: 0.10
+  test_split: 0.10
+  random_seed: 42
+  max_duration: 3.0
+
+# Audio settings
+audio:
+  sampling_rate: 16000
+
+# Log-mel spectrogram settings
+mel_spectrogram:
+  n_mels: 64
+  n_fft: 1024
+  hop_length: 256
+
+# HuBERT settings
+hubert:
+  model_name: "facebook/hubert-base-ls960"
+
+# Device settings
+device:
+  use_cuda: true
+  cuda_device: 0
+
+# Training settings
+training:
+  feature_type: "mel"
+  batch_size: 64
+  num_epochs: 20
+  learning_rate: 0.001
+  optimizer: "adam"
+  loss_function: "cross_entropy"
+  hidden_size: 128
+  checkpoint_dir: "checkpoints"
+  results_dir: "results"

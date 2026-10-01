@@ -1,0 +1,42 @@
+# Hyperparameters for Homework 5 - Part 2 (Optimization)
+# These values follow the assignment instructions directly.
+
+# Part 3: starting point used for every experiment
+start_point:
+  x: -1.0
+  y: -1.0
+
+# Safety cap on the number of epochs.  The loop runs until the gradient
+# norm drops below gradient_threshold (see below); this value only
+# prevents infinite loops when an optimizer diverges.
+num_epochs: 10000
+
+# Convergence criterion: stop when the L2 norm of the gradient falls
+# below this threshold.
+gradient_threshold: 0.001
+
+# Part 3: default (baseline) learning rate
+default_learning_rate: 0.1
+
+# Part 4: additional learning rates to compare against the default
+learning_rates: [0.01, 1.0]
+
+# Part 5: three different starting points to compare convergence speed
+extra_start_points:
+  - {x: -1.0, y: -1.0}
+  - {x: 1.5, y: -1.5}
+  - {x: -1.5, y: 2.0}
+
+# Part 6: standard deviation of the Gaussian noise added to gradients
+noise_std: 0.001
+
+# Adam hyperparameters (standard defaults)
+adam:
+  beta1: 0.9
+  beta2: 0.999
+  epsilon: 1.0e-8
+
+# RMSProp hyperparameters (standard defaults, same as torch.optim.RMSprop)
+rmsprop:
+  beta: 0.99
+  epsilon: 1.0e-8

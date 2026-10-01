@@ -1,0 +1,190 @@
+{
+  "part3": {
+    "SGD": {
+      "final_loss": 1.5678357522662584e+31,
+      "final_distance": 19899115.780752357,
+      "final_gradient_norm": Infinity,
+      "epochs_run": 3,
+      "convergence_epoch": null
+    },
+    "Adam": {
+      "final_loss": 1.2051125338257224e-06,
+      "final_distance": 0.0024555784001104725,
+      "final_gradient_norm": 0.0009928460931405425,
+      "epochs_run": 2323,
+      "convergence_epoch": 2003
+    },
+    "RMSProp": {
+      "final_loss": 1.2028780577545066,
+      "final_distance": 1.1929176966652315,
+      "final_gradient_norm": 16.822694778442383,
+      "epochs_run": 10000,
+      "convergence_epoch": null
+    }
+  },
+  "part4": {
+    "0.1": {
+      "SGD": {
+        "final_loss": 1.5678357522662584e+31,
+        "final_distance": 19899115.780752357,
+        "final_gradient_norm": Infinity,
+        "epochs_run": 3,
+        "convergence_epoch": null
+      },
+      "Adam": {
+        "final_loss": 1.2051125338257224e-06,
+        "final_distance": 0.0024555784001104725,
+        "final_gradient_norm": 0.0009928460931405425,
+        "epochs_run": 2323,
+        "convergence_epoch": 2003
+      },
+      "RMSProp": {
+        "final_loss": 1.2028780577545066,
+        "final_distance": 1.1929176966652315,
+        "final_gradient_norm": 16.822694778442383,
+        "epochs_run": 10000,
+        "convergence_epoch": null
+      }
+    },
+    "0.01": {
+      "SGD": {
+        "final_loss": 6.201449449505337e+41,
+        "final_distance": 8874079883.127249,
+        "final_gradient_norm": Infinity,
+        "epochs_run": 4,
+        "convergence_epoch": null
+      },
+      "Adam": {
+        "final_loss": 1.2252697541784407e-06,
+        "final_distance": 0.0024760235690273504,
+        "final_gradient_norm": 0.0009983001509681344,
+        "epochs_run": 8162,
+        "convergence_epoch": 7635
+      },
+      "RMSProp": {
+        "final_loss": 0.022153632176801837,
+        "final_distance": 0.03585697580139178,
+        "final_gradient_norm": 6.571811199188232,
+        "epochs_run": 10000,
+        "convergence_epoch": null
+      }
+    },
+    "1.0": {
+      "SGD": {
+        "final_loss": 1.8354867650317166e+47,
+        "final_distance": 206984535230.39963,
+        "final_gradient_norm": Infinity,
+        "epochs_run": 3,
+        "convergence_epoch": null
+      },
+      "Adam": {
+        "final_loss": 8.84241190264961e-07,
+        "final_distance": 0.0021050789593279975,
+        "final_gradient_norm": 0.000897559686563909,
+        "epochs_run": 763,
+        "convergence_epoch": 685
+      },
+      "RMSProp": {
+        "final_loss": 184.80704930805194,
+        "final_distance": 6.6931297460661945,
+        "final_gradient_norm": 1367.1810302734375,
+        "epochs_run": 10000,
+        "convergence_epoch": null
+      }
+    }
+  },
+  "part5": {
+    "start_0_(-1.0,-1.0)": {
+      "SGD": {
+        "final_loss": 1.5678357522662584e+31,
+        "final_distance": 19899115.780752357,
+        "final_gradient_norm": Infinity,
+        "epochs_run": 3,
+        "convergence_epoch": null
+      },
+      "Adam": {
+        "final_loss": 1.2051125338257224e-06,
+        "final_distance": 0.0024555784001104725,
+        "final_gradient_norm": 0.0009928460931405425,
+        "epochs_run": 2323,
+        "convergence_epoch": 2003
+      },
+      "RMSProp": {
+        "final_loss": 1.2028780577545066,
+        "final_distance": 1.1929176966652315,
+        "final_gradient_norm": 16.822694778442383,
+        "epochs_run": 10000,
+        "convergence_epoch": null
+      }
+    },
+    "start_1_(1.5,-1.5)": {
+      "SGD": {
+        "final_loss": 3.975075331326373e+36,
+        "final_distance": 446516411.5177496,
+        "final_gradient_norm": Infinity,
+        "epochs_run": 3,
+        "convergence_epoch": null
+      },
+      "Adam": {
+        "final_loss": 1.0629238573674057e-06,
+        "final_distance": 0.0023061713671920056,
+        "final_gradient_norm": 0.0009888674831017852,
+        "epochs_run": 3678,
+        "convergence_epoch": 3265
+      },
+      "RMSProp": {
+        "final_loss": 1.2015233847649283,
+        "final_distance": 1.1929861266184398,
+        "final_gradient_norm": 16.803264617919922,
+        "epochs_run": 10000,
+        "convergence_epoch": null
+      }
+    },
+    "start_2_(-1.5,2.0)": {
+      "SGD": {
+        "final_loss": 5.052148102414327e+68,
+        "final_distance": 4.7409897713177336e+16,
+        "final_gradient_norm": Infinity,
+        "epochs_run": 4,
+        "convergence_epoch": null
+      },
+      "Adam": {
+        "final_loss": 9.380933726057153e-07,
+        "final_distance": 0.0021665471670245036,
+        "final_gradient_norm": 0.000957400188781321,
+        "epochs_run": 986,
+        "convergence_epoch": 846
+      },
+      "RMSProp": {
+        "final_loss": 1.0510319372030257,
+        "final_distance": 1.208597113542319,
+        "final_gradient_norm": 16.782499313354492,
+        "epochs_run": 10000,
+        "convergence_epoch": null
+      }
+    }
+  },
+  "part6": {
+    "SGD": {
+      "final_loss": 1.5678470981699672e+31,
+      "final_distance": 19899151.780973163,
+      "final_gradient_norm": Infinity,
+      "epochs_run": 3,
+      "convergence_epoch": null
+    },
+    "Adam": {
+      "final_loss": 1.2308991373984818e-05,
+      "final_distance": 0.007839985292588433,
+      "final_gradient_norm": 0.0009636827162466943,
+      "epochs_run": 2065,
+      "convergence_epoch": 2005
+    },
+    "RMSProp": {
+      "final_loss": 1.2096758928450766,
+      "final_distance": 1.1924426648756312,
+      "final_gradient_norm": 16.923538208007812,
+      "epochs_run": 10000,
+      "convergence_epoch": null
+    }
+  }
+}
