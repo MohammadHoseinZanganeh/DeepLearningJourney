@@ -10,7 +10,7 @@ Implementation and comparison of three bidirectional RNN architectures (**BiRNN*
 - Labels: `O, B-PER, I-PER, B-ORG, I-ORG, B-LOC, I-LOC, B-MISC, I-MISC`
 - Configurable via `config/config.yaml`
 
-📄 Full details: [homework_code/part1/README.md](homework_code/Part1)
+📄 Full details: [part1/README.md](Part1/README.md)
 
 ## Part 2 — Vision Transformer (ViT) for CIFAR-10
 
@@ -20,7 +20,7 @@ A from-scratch implementation of the **Vision Transformer** (Dosovitskiy et al.,
 - Hyperparameter experiments (`embed_dim`, `num_layers`, `num_heads`, `patch_size`)
 - Attention map visualization for both the scratch model and pretrained ViT-B/16
 
-📄 Full details: [homework_code/part2/README.md](homework_code/Part2)
+📄 Full details: [part2/README.md](Part2/README.md)
 
 ---
 
